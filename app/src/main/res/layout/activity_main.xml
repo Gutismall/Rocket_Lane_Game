@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/main_FAB_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        app:icon="@drawable/baseline_arrow_circle_left_24"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/white"
+        android:layout_margin="20sp"
+        app:iconSize="60sp" />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/main_FAB_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        app:icon="@drawable/baseline_arrow_circle_right_24"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/white"
+        android:layout_margin="20sp"
+        app:iconSize="60sp" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_heat_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/heart"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_heat_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/heart"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_weight="1"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_heat_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/heart"
+            android:layout_weight="1"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_IMG_Ship"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        app:srcCompat="@drawable/space_ship_svgrepo_com" />
+
+<!--    <com.google.android.material.imageview.ShapeableImageView-->
+<!--        android:id="@+id/main_IMG_Rock"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        app:srcCompat="@drawable/asteroid_2_svgrepo_com" -->
+<!--        />-->
+</RelativeLayout>
