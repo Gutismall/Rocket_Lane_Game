@@ -1,57 +1,69 @@
 package com.example.hw1.logic
 
-import android.os.CountDownTimer
-import com.google.android.material.imageview.ShapeableImageView
-import kotlin.random.Random
+import com.example.hw1.utilities.Constants
 
 class GameManeger {
-    var board: Array<Array<Int>> = Array(4) { Array(3){0} }
-    var currentPostion: Int = 1
+    var board: Array<Array<Int>> = Array(Constants.boardSize) { Array(Constants.boardSize){0} }
+    var shipRow = Array(Constants.boardSize) {0}
+    var currentPostion: Int = 2
+    var odometer : Int = 0
+    var coins : Int = 0
     var hits: Int = 0
 
+    init {
+        shipRow[currentPostion] = 1
+    }
 
-
-    fun checkHit():Boolean{
-        if (board[board.size-1][currentPostion] == 2){
-            if (hits != 3){
-                hits++
-            }
-            board[board.size-1][currentPostion] -= 1
+    fun checkHit(): Boolean {
+    if (shipRow[currentPostion] == board[board.size - 1][currentPostion]) {
+        if (hits < 3)
+            hits++
+        return true
+    } else
+        return false
+    }
+    fun checkCoin(): Boolean {
+        if (board[board.size - 1][currentPostion] - shipRow[currentPostion] == 1) {
+            coins++
             return true
-        }
-        else{
-            for (pos in 0 until board[0].size){
-                if (board[board.size - 1][pos] == 1 && pos != currentPostion){
-                    board[board.size - 1][pos] -= 1
-                }
-            }
         }
         return false
     }
     fun moveDown() {
-        for (row in board.size - 2 downTo 0) {
-            for (col in 0 until board[row].size) {
-                if (board[row][col] == 1) {
-                    board[row + 1][col] += 1
-
-                    board[row][col] -= 1
+        for (i in board.size - 1 downTo 0) {
+            for (j in 0 until board[i].size) {
+                if (i == board.size - 1 && board[i][j] > 0) {
+                    board[i][j] = 0
+                }
+                if (board[i][j] == 1) {
+                    board[i][j] = 0
+                    board[i + 1][j] = 1
+                }
+                if (board[i][j] == 2) {
+                    board[i][j] = 0
+                    board[i + 1][j] = 2
                 }
             }
         }
     }
-
     fun addNewRock(lane:Int){
         board[0][lane] = 1
     }
 
     fun moveLeft() {
-        board[board.size - 1][currentPostion] -= 1
-        board[board.size - 1][currentPostion - 1] += 1
+        shipRow[currentPostion] -= 1
+        shipRow[currentPostion - 1] += 1
     }
 
     fun moveRight() {
-        board[board.size - 1][currentPostion] -= 1
-        board[board.size - 1][currentPostion + 1] += 1
+        shipRow[currentPostion] -= 1
+        shipRow[currentPostion + 1] += 1
+    }
+
+    fun addNewCoin(randomLane: Int) {
+        if (board[0][randomLane] == 0) {
+            board[0][randomLane] = 2
+        }
     }
 
 }

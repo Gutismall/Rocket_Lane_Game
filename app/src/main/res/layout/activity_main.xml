@@ -1,12 +1,524 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
+    android:background="@drawable/space_background"
     tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_LL_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical">
+
+        <!-- Row 1 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_LL_row0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_0_0"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_0_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_0_2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_0_3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_0_4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Row 2 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_LL_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_1_0"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_1_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_1_2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_1_3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_1_4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Row 3 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_LL_row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_2_0"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_2_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_2_2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_2_3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_2_4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Add rows 4 and 5 similarly with corresponding IDs (main_IMG_rock_3_0, etc.) -->
+
+        <!-- Row 4 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_LL_row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_3_0"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_3_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_3_2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_3_3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_3_4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Row 5 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_LL_row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_4_0"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_4_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_4_2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_4_3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_rock_4_4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/asteroid_2_svgrepo_com" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_LL_board_coin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical">
+
+        <!-- Row 1 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_LL_row0_coin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_0_0"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_0_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_0_2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_0_3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_0_4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Row 2 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_LL_row1_coin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_1_0"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_1_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_1_2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_1_3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_1_4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Row 3 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_LL_row2_coin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_2_0"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_2_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_2_2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_2_3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_2_4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Row 4 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_LL_row3_coin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_3_0"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_3_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_3_2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_3_3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_3_4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Row 5 -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_LL_row4_coin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_4_0"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_4_1"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com"  />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_4_2"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_4_3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/main_IMG_coin_4_4"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/coin_svgrepo_com" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/main_FAB_left"
@@ -19,6 +531,7 @@
         android:backgroundTint="@color/white"
         android:layout_margin="20sp"
         app:iconSize="60sp" />
+
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/main_FAB_right"
         android:layout_width="wrap_content"
@@ -30,6 +543,7 @@
         android:backgroundTint="@color/white"
         android:layout_margin="20sp"
         app:iconSize="60sp" />
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="140dp"
         android:layout_height="40dp"
@@ -50,35 +564,65 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/heart"
             android:layout_marginHorizontal="@dimen/default_margin"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1"/>
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/main_IMG_heat_2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/heart"
-            android:layout_weight="1"
-            />
-
+            android:layout_weight="1"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/main_IMG_Ship"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentBottom="true"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginBottom="100dp"
-        app:srcCompat="@drawable/space_ship_svgrepo_com" />
+        android:layout_weight="1">
 
-<!--    <com.google.android.material.imageview.ShapeableImageView-->
-<!--        android:id="@+id/main_IMG_Rock"-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:layout_centerInParent="true"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_marginTop="100dp"-->
-<!--        app:srcCompat="@drawable/asteroid_2_svgrepo_com" -->
-<!--        />-->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_rocketShip_0"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/space_ship_svgrepo_com" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_rocketShip_1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/space_ship_svgrepo_com" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_rocketShip_2"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/space_ship_svgrepo_com" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_rocketShip_3"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/space_ship_svgrepo_com" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_rocketShip_4"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/space_ship_svgrepo_com" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
 </RelativeLayout>
