@@ -11,6 +11,5 @@ class App: Application() {
         SharedPreferences.init(this)
         DataManger.init(this)
         ImageLoader.init(this)
-        DataManger.getInstance().generateHighScores()
     }
 }
